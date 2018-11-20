@@ -4,16 +4,10 @@ import java.sql.SQLOutput;
 
 public class CarTest {
     public static void main(String[] args) {
-        Car bmw = new Car();
-        bmw.fuel = 60;
-        bmw.fuelConsumption = 8;
-        bmw.started = false;
+        Car bmw = new Car(60, 8,false);
 
-        Car Dacia = new Car();
 
-        bmw.start();
-        bmw.drive(180);
-        bmw.drive(600);
+        Car Dacia = new Car(180, 600, false);
 
 
         System.out.println(bmw.fuel);
